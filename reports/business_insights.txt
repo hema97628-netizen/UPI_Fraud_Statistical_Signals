@@ -1,0 +1,60 @@
+
+BUSINESS INSIGHTS AND RECOMMENDATIONS
+=====================================
+
+1. WHICH VARIABLES STRONGLY INDICATE FRAUD?
+-------------------------------------------
+Product category C shows the strongest fraud signal, with a fraud rate of
+11.69%. Early-morning activity between 4 AM and 9 AM also shows elevated
+fraud activity at 7.06%. Transaction amount shows a statistically significant
+difference between fraud and legitimate transactions based on the Welch's
+t-test.
+
+2. ARE HIGH-VALUE TRANSACTIONS ALWAYS RISKY?
+---------------------------------------------
+No. High-value transactions are not always fraudulent. The 99th percentile
+transaction amount is 1104.00, and transactions above this threshold have a
+fraud rate of only 2.66%. Phase 3 also showed that the highest transaction
+amounts in the dataset were legitimate transactions.
+
+Therefore, transaction amount should be used together with other risk
+signals rather than as a standalone fraud rule.
+
+3. WHAT USER BEHAVIORS APPEAR SUSPICIOUS?
+------------------------------------------
+Early-morning transaction activity appears suspicious because the fraud rate
+during 4 AM to 9 AM is 7.06%, which is substantially higher than the overall
+dataset fraud rate of 3.50%.
+
+High transaction frequency alone does not appear to be a strong signal.
+The high-frequency group has a fraud rate of only 0.75%.
+
+4. WHICH CUSTOMER SEGMENTS REQUIRE MONITORING?
+----------------------------------------------
+The following segments should receive increased monitoring:
+
+- Transactions associated with Product Category C
+- Transactions occurring during early-morning hours
+- Very high-value transactions when combined with other risk indicators
+- Transactions showing multiple suspicious signals at the same time
+
+5. RECOMMENDATIONS FOR FRAUD TEAMS
+----------------------------------
+1. Apply enhanced monitoring to Product Category C transactions.
+2. Increase risk checks for transactions occurring during early-morning
+   hours.
+3. Do not block transactions based only on high transaction amount.
+4. Combine multiple statistical signals before escalating a transaction.
+5. Use risk-based alerts to prioritize suspicious transactions for manual
+   investigation.
+6. In future analysis, include device-change and account-age information
+   to improve fraud detection.
+
+OVERALL BUSINESS CONCLUSION
+---------------------------
+The analysis indicates that fraud is associated with specific transaction
+patterns rather than a single variable. Product category and time of day
+show stronger practical signals, while high transaction amount alone is
+not sufficient to identify fraud.
+
+A multi-signal risk monitoring approach is therefore recommended.

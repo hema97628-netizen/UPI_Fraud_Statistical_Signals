@@ -1,0 +1,45 @@
+
+STATISTICAL FRAUD SIGNAL REPORT
+================================
+
+Dataset Transactions: 590540
+
+SIGNAL 1 - HIGH-VALUE TRANSACTIONS
+Threshold: 99th percentile = 1104.00
+Fraud Rate: 2.66%
+Severity: MEDIUM
+Finding: High-value transactions require monitoring, but high value alone
+does not indicate fraud because many extreme transactions are legitimate.
+
+SIGNAL 2 - EARLY-MORNING ACTIVITY
+Time Window: 4 AM - 9 AM
+Fraud Rate: 7.06%
+Severity: HIGH
+Finding: Early-morning transactions show elevated fraud activity compared
+with the overall dataset fraud rate.
+
+SIGNAL 3 - PRODUCT CATEGORY C
+Fraud Rate: 11.69%
+Severity: HIGH
+Finding: Product category C shows a substantially higher fraud rate and
+should receive increased monitoring.
+
+SIGNAL 4 - HIGH TRANSACTION FREQUENCY
+99th Percentile Frequency: 14932.00
+Fraud Rate: 0.75%
+Severity: LOW
+Finding: High transaction frequency alone does not appear to be a strong
+fraud signal in this dataset.
+
+IMPORTANT LIMITATION
+--------------------
+Direct device-change and account-age variables were not included in the
+selected transaction dataset analysis. Therefore, these signals were not
+fabricated or inferred.
+
+OVERALL PRIORITY
+----------------
+1. Product Category C - HIGH
+2. Early-Morning Activity - HIGH
+3. High-Value Transactions - MEDIUM
+4. High Transaction Frequency - LOW
