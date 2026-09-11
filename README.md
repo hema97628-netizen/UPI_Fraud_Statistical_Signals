@@ -139,3 +139,5 @@ Fraud_Detection_Analysis/
 │   ├── fraud_signals.py
 │   ├── business_insights.py
 │   └── visualize.py
+└── requirements.txt
+```
